@@ -25,7 +25,8 @@ class PushConfig:
                  push_plus_max=30,
                  push_wechat_webhook_key=None,
                  telegram_bot_token=None,
-                 telegram_chat_id=None):
+                 telegram_chat_id=None,
+                 server_chan_sendkey=None):   # 这一行必须有
         self.push_plus_token = push_plus_token
         self.push_plus_hour = push_plus_hour
         self.push_plus_max = int(push_plus_max) if push_plus_max else 30
